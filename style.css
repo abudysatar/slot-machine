@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #52357b;
+  height: 100vh;
+}
+
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e1ff00;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10rem;
+}
+
+.slot-machine-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  margin-block: 5rem;
+}
+
+.slot-machine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: 10px dotted #f6ff00;
+  gap: 3rem;
+  animation: borderColorChange 4s infinite;
+}
+
+.slot-machine img {
+  width: 150px;
+  height: 150px;
+  border: 10px solid #626262;
+  background-color: #f8f8f8;
+}
+
+.btn:hover {
+  background-color: rgba(255, 0, 0, 0.548);
+}
+
+.btn {
+  border: 5px dotted #e1ff00;
+  border-width: 5px;
+  border-radius: 50px;
+  padding: 1rem;
+  background-color: #5458acd2;
+  font-size: large;
+  font-weight: 600;
+  color: #ddff00fe;
+  margin-top: 3rem;
+  cursor: pointer;
+  animation: borderColorChange 4s infinite;
+}
+
+/* Animation that cycles the border color */
+@keyframes borderColorChange {
+  0% {
+    border-color: yellow;
+  }
+  25% {
+    border-color: cyan;
+  }
+  50% {
+    border-color: magenta;
+  }
+  75% {
+    border-color: lime;
+  }
+  100% {
+    border-color: yellow;
+  }
+}

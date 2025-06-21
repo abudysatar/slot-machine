@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slot Machine</title>
+
+    <audio id="backgroundAudio" autoplay loop>
+      <source src="sounds/bruit-2-casino-56939.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="buttonSound">
+      <source
+        src="sounds/playful-casino-slot-machine-bonus-2-183919.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Welcome to our Slot Machine</h1>
+    <h2 id="balance">
+      Balance: <span style="color: rgb(10, 192, 10)"> $30</span>
+    </h2>
+    <div class="slot-machine-container">
+      <div class="slot-machine">
+        <div class="reel" id="reel1"><img src="./img/reel1.png" alt="" /></div>
+        <div class="reel" id="reel2"><img src="./img/reel1.png" alt="" /></div>
+        <div class="reel" id="reel3"><img src="./img/reel1.png" alt="" /></div>
+      </div>
+
+      <button class="btn">Press To Spine</button>
+    </div>
+
+    <script src="./index.js" charset="UTF-8"></script>
+  </body>
+</html>
