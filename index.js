@@ -48,11 +48,17 @@ window.addEventListener("keydown", function (event) {
     btn.click();
   }
 });
-const audio = document.getElementById("backgroundAudio");
-window.addEventListener(
-  "load",
-  function () {
-    audio.play();
-  },
-  true
-);
+
+const audio = new Audio("sounds/bruit-2-casino-56939.mp3");
+
+audio.addEventListener("canplaythrough", () => {
+  audio.play().catch((e) => {
+    window.addEventListener(
+      "click",
+      () => {
+        audio.play();
+      },
+      { once: true }
+    );
+  });
+});
